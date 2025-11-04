@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://any2all.net"),
   title: {
     default: "Any2All — Convert any file online, fast & free",
-    template: "%s | Any2All"
+    template: "%s | Any2All",
   },
   description:
     "Any2All lets you convert files online for free — PDF↔Word, JPG↔PDF, PNG↔JPG, image compression, and more. Fast, private, and no sign up required.",
@@ -20,10 +20,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Google AdSense verification meta tag */}
+        {/* ✅ Google AdSense Verification */}
         <meta
           name="google-adsense-account"
           content="ca-pub-7635659670642521"
+        />
+
+        {/* ✅ Google Analytics (replace YOUR_TAG_ID with your real ID, e.g. G-27P9594EQQ) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-27P9594EQQ"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-27P9594EQQ');
+            `,
+          }}
         />
       </head>
 
