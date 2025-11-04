@@ -1,27 +1,18 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        brand: {
-          DEFAULT: "#2563eb", // classic blue
-          dark: "#1e40af",
-          light: "#93c5fd",
-        }
-      },
       boxShadow: {
-        soft: "0 8px 20px rgba(0,0,0,0.06)",
+        soft: "0 2px 10px rgba(0, 0, 0, 0.08)", // Custom "soft" shadow
       },
-      borderRadius: {
-        xl: "1rem",
-        "2xl": "1.25rem",
-      }
     },
   },
   plugins: [],
-} satisfies Config;
+};
+
+export default config;
