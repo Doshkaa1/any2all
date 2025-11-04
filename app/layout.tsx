@@ -26,10 +26,10 @@ export default function RootLayout({
           content="ca-pub-7635659670642521"
         />
 
-        {/* ✅ Google Analytics (replace YOUR_TAG_ID with your real ID, e.g. G-27P9594EQQ) */}
+        {/* ✅ Google Analytics (replace YOUR_TAG_ID with your real ID, e.g. G-27P9504E9Q) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-27P9594EQQ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-27P9504E9Q"
         ></script>
         <script
           dangerouslySetInnerHTML={{
@@ -37,7 +37,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-27P9594EQQ');
+              gtag('config', 'G-27P9504E9Q');
             `,
           }}
         />
