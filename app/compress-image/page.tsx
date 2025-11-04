@@ -1,6 +1,7 @@
 'use client';
 import { useRef, useState } from 'react';
-import AdSlot from "@/components/AdSlot";
+import AdSlot from "../../components/AdSlot";
+
 
 export default function CompressImage() {
   const [file, setFile] = useState<File | null>(null);

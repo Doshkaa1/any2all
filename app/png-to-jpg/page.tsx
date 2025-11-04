@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef } from 'react';
-import AdSlot from "@/components/AdSlot";
+import AdSlot from "../../components/AdSlot";
+
 
 export default function PngToJpg() {
   const [file, setFile] = useState<File | null>(null);

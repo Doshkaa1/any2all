@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { jsPDF } from "jspdf";
-import AdSlot from "@/components/AdSlot";
+import AdSlot from "../../components/AdSlot";
+
 
 export default function JpgToPdf() {
   const [files, setFiles] = useState<FileList | null>(null);
